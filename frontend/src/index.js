@@ -11,13 +11,13 @@ import {
 } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import HomePage from './pages/HomePage';
+import ProductDetails from './pages/ProductDetails';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App/>}>
-      <Route index={true} path="/" element={<HomePage/>}>
-      
-      </Route>
+      <Route index={true} path="/" element={<HomePage/>}/>
+      <Route path="/product/:id" element={<ProductDetails/>}/>
     </Route>
   )
 )

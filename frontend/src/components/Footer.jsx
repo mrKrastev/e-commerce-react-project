@@ -4,10 +4,10 @@ const Footer = () => {
     const currentYear = new Date().getFullYear()
 
   return (
-    <footer>
+    <footer className='footer'>
         <Container>
             <Row>
-                <Col className="text-center py-3">
+                <Col className="footer-copyright text-center text-muted py-3">
                     <p>
                         E-commerce react project &copy; {currentYear}
                     </p>
